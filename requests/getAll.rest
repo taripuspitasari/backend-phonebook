@@ -1,0 +1,41 @@
+DELETE http://localhost:3001/api/persons/662f865d890d1cb22f147c16
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY2MjQ5NmIxODQxZGQ0NGEzNTA2Y2I3YiIsImlhdCI6MTcxNDM5MDUxNH0.H6rd1miegHANt7QKJxBHBm2E5CxOrf8sgAV2ED9FIFY
+
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY2MjQ5NmIxODQxZGQ0NGEzNTA2Y2I3YiIsImlhdCI6MTcxNDM5MDUxNH0.H6rd1miegHANt7QKJxBHBm2E5CxOrf8sgAV2ED9FIFY
+
+{ 
+     "name": "Arto Belegug", 
+      "number": "39-23-6423234"
+    }
+
+###
+GET  http://localhost:3001/api/persons
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRhbWVuam8iLCJpZCI6IjY2MjQ5NjgzODQxZGQ0NGEzNTA2Y2I3OCIsImlhdCI6MTcxNDQ0Mjk5OH0.2HQm28G-ank0j0bY0VIx2G6u9yDT5wyLjhd-B0utiY4
+
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+DELETE http://localhost:3001/api/users/66248de043b59fd7c7df7a18
+
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+     "username": "damenjo",
+     "password": "penghianat"
+}
